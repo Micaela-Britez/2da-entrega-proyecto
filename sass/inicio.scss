@@ -1,0 +1,49 @@
+ .hero{
+    background-color:lightpink;
+    padding: 50px 20px;
+    margin-top: 10px;
+    
+    color: black;
+
+
+ &__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; 
+    align-items: center;
+
+ &--content h1{
+    color: white;
+    font-size:40px ;
+    margin-bottom: 30px;
+    font-style: italic;
+
+
+
+ &--content p{
+    margin-bottom: 20px;
+
+
+&--content a{
+    background-color:$lila;
+    color:rgb(218, 73, 97);
+    padding: 15px;
+    border-radius: 10px;
+
+ &--img{
+    border-radius: 10px;
+    transition: transform: 0.3s;
+
+    &:hover{
+        transform: rotate(10deg);
+    }
+
+}
+
+}
+}
+}
+}
+}
+
+    
