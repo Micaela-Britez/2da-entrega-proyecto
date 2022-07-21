@@ -1,3 +1,28 @@
+/*mixin*/
+
+@mixin card-base ($alineacion, $fondo) {
+   border-radius: 10px;
+   border: 2px solid #333;
+   margin-top: 30px;
+   display: flex;
+   justify-content: $alineacion;
+   background-color: $fondo;
+ };
+
+ .card-1 {
+   @include card-base (space-between, pink);
+ }
+ 
+ .card-2 {
+   @include card-base  (space-between, violet);
+ }
+ 
+ .card-3 {
+   @include card-base (space-between, aqua);
+ };
+ 
+ /*Nesting*/
+ 
  .hero{
     background-color:lightpink;
     padding: 50px 20px;
@@ -46,4 +71,15 @@
 }
 }
 
-    
+
+/*media querie*/
+
+@media (max-width:576px){
+   .hero__grid{
+       grid-template-columns: 1fr;
+   }
+
+   .footer__grid{
+       grid-template-columns: 1 fr;
+   }
+}

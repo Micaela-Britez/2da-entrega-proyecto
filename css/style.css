@@ -1,3 +1,8 @@
+
+header{
+  background-color: #e773be;}
+
+
 footer {
   background-color: #e773be; }
 
@@ -11,6 +16,8 @@ h3 {
 
 .logo {
   padding-right: 5px; }
+
+  /*footer*/
 
 .footer {
   background-color: #e773be;
@@ -51,3 +58,81 @@ h4 {
   align-items: center; }
   .foot__iconos:hover {
     color: crimson; }
+
+
+
+    /*extend*/
+    .btn-base{
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      padding: 10px 10px;
+      border-radius: 10px;
+      border: black;
+      transition: all 0.3;
+  
+  
+      &:hover{
+          opacity: 0.8;
+      }
+  
+  }
+  
+  
+  
+  .btn-dulce{
+      @extend .btn-base;
+      background-color:coral;
+      
+   }
+  
+   .btn-salado{
+    @extend .btn-base;
+    background-color:blueviolet;
+  
+   }
+  
+   .btn-otro{
+    @extend .btn-base;
+    background-color:aqua;
+   }
+
+
+   /*tarjetas*/
+  
+   .card{
+    background-color:#e773be;
+    padding: 20 px;
+    margin-bottom: 20px;
+    width: 25%;
+    height: 475px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px 12px rgba black (0, 0, 0, 0.5);
+
+}
+
+.card__header img{
+    width: 80%;
+    border-radius:10px;
+    margin-bottom: 20px;
+    margin-top: 10px ;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.hero{
+  background-color:lightpink;
+  padding: 50px 20px;
+  margin-top: 10px;
+  
+  color: black;
+}
+
+
+
+
+

@@ -1,3 +1,33 @@
+/*colores*/
 $lila:rgb(231, 115, 190);
 $darkmg: darkmagenta;
 $pink: crimson;
+
+
+
+$fontbase: 16px;
+$fontmedium: $fontbase + 2;
+
+
+/*maps y bucle*/
+
+$redessociales: (
+    instagram: #c92d8f,
+    facebook: blue,
+    
+  );
+
+@each $nombre, $color in $redessociales{
+  .link-#{$nombre}
+  { margin: 0 5 px;
+      padding: 10px ;
+      border-radius: 10px ;
+      color: white;
+      text-decoration: none;
+      background-color: $color;
+  }
+}
+
+ 
+
+ 
