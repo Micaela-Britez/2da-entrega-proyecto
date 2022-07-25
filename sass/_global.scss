@@ -9,6 +9,14 @@ footer {
     background-color: #e773be;
 }
 
+h1{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+
 h2{
     color: black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -36,5 +44,22 @@ h3{
 
 p{
     font-size: $fontmedium;
-
   }
+
+
+  .linea{
+    width:1200px;
+    margin-top: 80px;
+  }
+
+  .textproductos{
+    text-align: center;
+    font-family:cursive
+  }
+
+  .seccion__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+  }
+  

@@ -41,8 +41,6 @@ h1{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   margin-top: 30px;
-  
-  
 }
 
 .linea{
@@ -74,8 +72,7 @@ h3 {
 .logo {
   padding-right: 5px; }
 
-
-
+  
 .seccion__grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -116,31 +113,6 @@ h3 {
   }
 
 
-  /*nosotros*
-  .nosotros{
-    display:flex
-
-  }
-
-  .nosotros p{
-    background-color: bisque;
-    border-color: black;
-    border-radius: 20px;
-    width: 600px;
-    margin-top: 70px;
-    margin-left: 30px;
-    padding-left: 10px;
-    padding-top: 20px;
-    font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
-    display: inline-flex;
-  }
-
-  .nosotros__grid img{
-    border-radius: 10px;
-    
-  
-  }
   /*footer*/
 
 .footer {
@@ -193,23 +165,21 @@ h4 {
       color: black;
     }
   
-  
-   .hero__grid{
+    .hero__grid{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 40px; 
       align-items: center;
    }
    
-   .hero__grid--content h1{
+    .hero__grid--content h1{
       color: white;
       font-size:40px ;
       margin-bottom: 30px;
       font-style: italic;
    }
   
-  
-  
+
    .hero__grid--content p{
       margin-bottom: 20px;
    }
@@ -300,6 +270,7 @@ h4 {
  }
  
  
+
  .productos{
     font-family: cursive;
     text-align: center;

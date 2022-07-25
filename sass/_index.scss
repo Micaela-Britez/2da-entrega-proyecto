@@ -3,32 +3,4 @@
 @import './bodyinicio';
 @import './footer';
 
-/*media querie*/
 
-
-@media (max-width:425px){
-   
-    .hero__grid{
-        grid-template-columns: (1 fr);
-    }
- 
-    .productos__grid{
-       grid-template-columns: (1fr) ;
-    }
-    .footer__grid{
-       grid-template-columns: (1fr);
- }
- }
- 
- @media (max-width:1440px){
-    .hero__grid{
-       grid-template-columns:repeat (2, 1fr);
-   }
- 
-   .productos__grid{
-    grid-template-columns:repeat (3, 1fr) ;
- }
- .footer__grid{
-    grid-template-columns:repeat (4, 1fr);
- }
- }

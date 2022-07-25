@@ -1,5 +1,4 @@
 
-
 /*mixin*/
 
 @mixin card-base ($alineacion, $fondo) {
@@ -73,21 +72,28 @@
 }
 }
 
+
 .card{
    background-color: #fff;
    padding: 20px;
-   border: #333;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 40px;
+   align-items: center;
+   width: 300px;
+   border-color: black;
    border-radius: 10px;
-   width: 400px;
+  
+   gap: 5px;
    
 
 &__header{
    position: relative;
+
 }
 
-
 &img{
-   width: 100%;
+   width: 80%;
    border-radius: 10px;
    margin-bottom: 20px;
 }
@@ -98,6 +104,7 @@
 .productos{
    font-family: cursive;
    text-align: center;
+   margin-top: 20px;
 
 
 &__grid{
@@ -105,6 +112,7 @@
    grid-template-columns: repeat(3, 1fr);
 }
 }
+
 
 /*nosotros*/
 .nosotros{
