@@ -9,6 +9,13 @@ footer {
     background-color: #e773be;
 }
 
+h2{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
 h3{
     color:black;
     background-color: $lila;
@@ -29,4 +36,5 @@ h3{
 
 p{
     font-size: $fontmedium;
+
   }

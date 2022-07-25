@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <script src="../js/bootstrap.bundle.min.js"></script>
     
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -34,13 +33,13 @@
                     <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
+                    <a class="nav-link" href="product.html">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Contacto</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -53,174 +52,159 @@
 		<section class="container">
 			<div>
 				<h1 >Pasteleria Artesanal </h1>
-				<p> Conocé todas nuestras variedades de productos dulces y salados</p>
+				<p class="textproductos"> Conocé todas nuestras variedades de productos dulces y salados</p>
 
 			</div>
         </section>
 
 
-    <h3 class="container"> Tortas Dulces</h3>
+    <h3 class="container productos"> Tortas Dulces</h3>
 
+    <div class= "productos__grid">
 
-          <article class="card container">
-
-            <div class="card__header " style="width: 18rem;">
-      
-                <img src="../imagen/tortaunicornio.jpeg" class="card-img-top" width="200px;" height="300px;" alt="chocolate">
-          
-                 <h5 class="card-title">Torta de unicornio</h5>
-                  <p class="card-text">Doble relleno, recubierta con fontdant</p>
-                 <a href="#" class="btn-base btn-dulce">Abrir</a>
-         
-        
-            </div>
-
-          </article>
-
-
-
-
-          <article class="card container ">
-
-              <div class="card__header " style="width: 18rem;">
-        
-                  <img src="../imagen/torta de chocolate.jpg" class="card-img-top" width="200px;" height="300px;" alt="chocolate">
-            
-                   <h5 class="card-title">Torta de Chocolate</h5>
-                    <p class="card-text">Torta de ganache de chocolate, relleno de dulce de leche</p>
-                   <a href="#" class="btn-base btn-dulce">Abrir</a>
-           
-          
-              </div>
-
-            </article>
-
-
-
-            <article class="card container">
-
-          
-              <div class="card__header" style="width: 18rem;">
-                   <img src="../imagen/tortaglobo.jpeg" class="card-img-top" alt="globo">
-            
-                  <h5 class="card-title">Torta Globo</h5>
-                  <p class="card-text">Torta de crema, ganache y doble relleno</p>
-                  <a href="#" class="btn-base btn-dulce">Abrir</a>
-            
-              </div>
-
-            </article>
-         
-                  
-            
-                    
-        
+    <article class="card">
+      <div class="card__header">
+        <img src="../imagen/tortaunicornio.jpeg" alt="torta unicornio" />
+       </div>
+      <h4 class="card__title"> Torta Unicornio </h3>
+      <p class="card__description">
+        Doble relleno, recubierta con fontdant
+      </p>
+    <a class="card__link  btn-base btn-dulce" href="../imagen/tortaunicornio.jpeg"> Ver</a>
     
-      </section>
-
-
-      <h3 class="container"> Tortas saladas</h3>
-
-      <article class="card container">
-
-        <div class="card__header" style="width: 18rem;">
-                  
-
-                        <img src="../imagen/torta29.jpeg" class="card-img-top" alt="numero">
-                        
-                          <h5 class="card-title">Torta de numeros</h5>
-                          <p class="card-text">Torta sandwich triple</p>
-                          <a href="#" class="btn-base btn-salado">Abrir</a>
-                            
-                 </div>
-
-
-          </article>
-
-
-        <article class="card container">
-
-            <div class="card__header" style="width: 18rem;">
-      
-              
-                        <img src="../imagen/tortacjs.jpeg" class="card-img-top" width="200px;" height="300px;" alt="callejeros">
-                        
-                          <h5 class="card-title">Torta Callejeros</h5>
-                          <p class="card-text">Torta sandwch cuadrada de 3 capas </p>
-                          <a href="#" class="btn-base btn-salado">Abrir</a>
-                </div>
-
-        </article>
-
-        <article class="card container">
-
-          <div class="card__header" style="width: 18rem;">
-      
-                  
-                        <img src="../imagen/tortaM.jpeg" class="card-img-top" alt="letra">
-                        
-                          <h5 class="card-title">Torta de Letra</h5>
-                          <p class="card-text">Torta sandwich trile capa</p>
-                          <a href="" class="btn-base btn-salado">Abrir</a>
-                        
-                      </div>
-
-          </article>
-      
-      </section>
-
-      <section class="container">
-      
-      <h3 class="container"> Más productos</h3>
-
-      <article class="card container">
-
-        <div class="card__header" style="width: 18rem;">
     
-              
-                        <img src="../imagen/desayuno.jpg" class="card-img-top" alt="tortas">
-                        
-                          <h5 class="card-title">Desayunos</h5>
-                          <p class="card-text">Desayunos dulces y salados</p>
-                          <a href="#" class="btn-base btn-otro">Ver modelos</a>
-                    
-                 </div>
+    </article>
 
+
+    <article class="card">
+      <div class="card__header">
+        <img src="../imagen/torta de chocolate.jpg" alt="chocolate" />
+       </div>
+      <h4 class="card__title"> Torta de Chocolate </h3>
+      <p class="card__description">
+        Cubierta con ganache de chocolate, relleno de dulce de leche
+      </p>
+    <a class="card__link  btn-base btn-dulce" href="../imagen/torta de chocolate.jpg"> Ver</a>
+    
+    
+    </article>
+
+
+    <article class="card">
+      <div class="card__header">
+        <img src="../imagen/tortaglobo.jpeg"  alt="globo" />
+       </div>
+      <h4 class="card__title"> Torta Globo </h3>
+      <p class="card__description">
+        Torta de crema, ganache y doble relleno
+      </p>
+    <a class="card__link btn-base btn-dulce" href="../imagen/tortaglobo.jpeg"> Ver</a>
+    
+    
+    </article>
+
+    </div>
+
+
+      <h3 class="container productos"> Tortas saladas</h3>
+
+      <div class= "productos__grid">
+
+        <article class="card">
+          <div class="card__header">
+            <img src="../imagen/torta29.jpeg"  alt="numero" />
+           </div>
+          <h4 class="card__title"> Torta Número </h4>
+          <p class="card__description">
+            Torta sandwich triple
+          </p>
+        <a class="card__link btn-base btn-salado" href="../imagen/torta29.jpeg"> Ver</a>
+        
+        
         </article>
-
-        <article class="card container">
-
-          <div class="card__header" style="width: 18rem;">
-      
-  
-                    
-                        <img src="../imagen/tartafrutilla.jpg" class="card-img-top" width="200px;" height="300px;" alt="tartas">
-                        
-                          <h5 class="card-title">Tartas</h5>
-                          <p class="card-text">Tartas frutales, frutilla, durazno, coco </p>
-                          <a href="" class="btn-base btn-otro">Ver Más</a>
-                     
-                 </div>
-
+    
+    
+        <article class="card">
+          <div class="card__header">
+            <img src="../imagen/tortacjs.jpeg" alt="callejeros" />
+           </div>
+          <h4 class="card__title"> Torta Callejeros </h4>
+          <p class="card__description">
+            Torta sandwch cuadrada de 3 capas
+          </p>
+        <a class="card__link btn-base btn-salado" href="../imagen/tortacjs.jpeg"> Ver</a>
+        
+        
         </article>
-
-
-        <article class="card container">
-
-          <div class="card__header" style="width: 18rem;">
-      
-                        <img src="../imagen/alfajores.jpg" class="card-img-top" alt="alfajores">
-                        
-                          <h5 class="card-title">Alfajores</h5>
-                          <p class="card-text">Alfajores de maicena, chocolate, balcarse y más</p>
-                          <a href="" class="btn-base btn-otro">Ver Más</a>
-                
-                      </div>
-
+    
+    
+        <article class="card">
+          <div class="card__header">
+            <img src="../imagen/tortaM.jpeg" alt="letra" />
+           </div>
+          <h4 class="card__title"> Torta de Letra </h4>
+          <p class="card__description">
+            Torta sandwich trile capa
+          </p>
+        <a class="card__link btn-base btn-salado" href="../imagen/tortaM.jpeg"> Ver</a>
+        
+        
         </article>
-            
+    
+        </div>
+    
+   
+
       
-      </section>
+      <h3 class="container productos"> Más productos</h3>
+
+
+      <div class= "productos__grid">
+
+        <article class="card">
+          <div class="card__header">
+            <img src="../imagen/desayuno.jpg" alt="desayunos" />
+           </div>
+          <h4 class="card__title"> Desayunos </h4>
+          <p class="card__description">
+            Desayunos dulces y salados
+          </p>
+        <a class="card__link btn-base btn-otro" href=""> Ver modelos</a>
+        
+        
+        </article>
+    
+    
+        <article class="card">
+          <div class="card__header">
+            <img src="../imagen/tartafrutilla.jpg"  alt="tartas" />
+           </div>
+          <h4 class="card__title"> Tartas </h4>
+          <p class="card__description">
+            Tartas frutales, frutilla, durazno, coco
+          </p>
+        <a class="card__link btn-base btn-otro" href=""> Ver más</a>
+        
+        
+        </article>
+    
+    
+        <article class="card">
+          <div class="card__header">
+            <img src="../imagen/alfajores.jpg" alt="alfajores" />
+           </div>
+          <h4 class="card__title"> Alfajores </h4>
+          <p class="card__description">
+            Alfajores de maicena, chocolate, balcarse y más
+          </p>
+        <a class="card__link btn-base btn-otro" href=""> Ver más</a>
+        
+        
+        </article>
+    
+        </div>
+    
+
       
         </main>
       
@@ -278,3 +262,4 @@
       </body>
       </html>
     
+

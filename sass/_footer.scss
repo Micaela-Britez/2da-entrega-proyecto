@@ -21,6 +21,7 @@
 
     
  h4 {
+   font-family: cursive;
     font-weight: bold;
     font-size: $fontmedium;
     margin-bottom: 10px;
@@ -76,9 +77,15 @@ a{
 
 /*media querie*/
 
-@media (max-width:576px){
+@media (max-width:425px){
    
    .footer__grid{
-       grid-template-columns: 1 fr;
+       grid-template-columns: (1 fr);
    }
-}
+};
+
+@media (max-width:1440px){
+   .footer__grid{
+      grid-template-columns:repeat (4, 1fr);
+  }
+};

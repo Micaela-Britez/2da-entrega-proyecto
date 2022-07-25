@@ -1,3 +1,5 @@
+
+
 /*mixin*/
 
 @mixin card-base ($alineacion, $fondo) {
@@ -71,15 +73,98 @@
 }
 }
 
+.card{
+   background-color: #fff;
+   padding: 20px;
+   border: #333;
+   border-radius: 10px;
+   width: 400px;
+   
+
+&__header{
+   position: relative;
+}
+
+
+&img{
+   width: 100%;
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+}
+
+
+
+.productos{
+   font-family: cursive;
+   text-align: center;
+
+
+&__grid{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/*nosotros*/
+.nosotros{
+   display:flex;
+
+ p{
+   background-color: bisque;
+   border-color: black;
+   border-radius: 20px;
+   width: 600px;
+   margin-top: 70px;
+   margin-left: 30px;
+   padding-left: 10px;
+   padding-top: 20px;
+   font-weight: bold;
+   font-family:Arial, Helvetica, sans-serif;
+   display: inline-flex;
+ }
+
+ &__grid img{
+   border-radius: 10px;
+   
+ 
+ }
+}
+
 
 /*media querie*/
 
-@media (max-width:576px){
-   .hero__grid{
-       grid-template-columns: 1fr;
-   }
 
-   .footer__grid{
+@media (max-width:425px){
+   
+   .hero__grid{
        grid-template-columns: 1 fr;
    }
+
+   .productos__grid{
+      grid-template-columns: 1fr ;
+   }
+   .footer__grid{
+      grid-template-columns: 1fr;
 }
+};
+
+@media (max-width:1440px){
+   .hero__grid{
+      grid-template-columns:repeat (2, 1fr);
+  }
+
+  .productos__grid{
+   grid-template-columns:repeat (3, 1fr) ;
+}
+.footer__grid{
+   grid-template-columns:repeat (4, 1fr);
+}
+};
+
+
+
+
+
+
+
