@@ -108,20 +108,15 @@
 
 /*nosotros*/
 .nosotros{
-   display:flex;
+   display:grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
 
  p{
    background-color: bisque;
-   border-color: black;
-   border-radius: 20px;
-   width: 600px;
-   margin-top: 70px;
-   margin-left: 30px;
-   padding-left: 10px;
-   padding-top: 20px;
    font-weight: bold;
    font-family:Arial, Helvetica, sans-serif;
-   display: inline-flex;
+   
  }
 
  &__grid img{

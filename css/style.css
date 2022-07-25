@@ -97,7 +97,26 @@ h3 {
     
   }
 
-  /*nosotros*/
+
+
+/*nosotros*/
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 800px;
+    margin-top: 40px;
+  }
+ 
+  p{
+    background-color: bisque;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+
+
+  /*nosotros*
   .nosotros{
     display:flex
 
