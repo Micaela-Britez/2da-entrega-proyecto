@@ -1,10 +1,11 @@
+*{ margin: 0;
+padding: 0;}
+*
 
 header{
-  background-color: #e773be;}
+  background-color: #edacb8;
+}
 
-
-footer {
-  background-color: #e773be; }
 
 h1{
   color: black;
@@ -13,250 +14,244 @@ h1{
   margin-top: 30px;
 }
 
-.linea{
-  width:1200px;
-  margin-top: 80px;
-}
-
-.textproductos{
-  text-align: center;
-  font-family:cursive
-}
 
 h2{
-  color: black;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: grey;
+  font-family:'Times New Roman', Times, serif, cursive;
+  background-image: url(../imagen/90412.jpg);
+ 
+  font-weight: bolder;
   text-align: center;
   margin-top: 30px;
-
+  
 }
 
 h3 {
-  color: black;
-  background-color: #e773be; }
+  color:black ;
+  font-family:'Times New Roman', Times, serif, cursive;
 
-.boton {
-  color: black;
-  background-color: "$colorppal"; }
+  font-weight: bolder;
+  background-color:white;
+  border-radius: 20px;
+  display: block;
+  padding: 10px 10px;
+  }
+
+h4{
+  text-align: center;
+  } 
+
+  p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:grey;
+  }
 
 .logo {
   padding-right: 5px; }
 
 
-.seccion__grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 40px;
-}
-
-
-  /*contacto*/
   .contacto{
-    background-color:#e773be;
-    border-color: black;
+    background-color:#edacb8;
+    border:5px dotted white;
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 20px;
     align-content: center;
     width: 300px;
     border-radius: 10px;
-    
-    
   }
-
-
-
-/*nosotros*/
-  .grid{
+ 
+  .nosotros__grid{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    width: 800px;
+    justify-items: center;
+   
     margin-top: 40px;
   }
  
-  p{
-    background-color: bisque;
-    font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
-    
+  .imgnosotros{
+    border-radius: 80px;
   }
 
 
-  /*footer*/
-
 .footer {
-  background-color: #e773be;
   padding: 40px 20px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  background-image: url(../imagen/90412.jpg);
+  background-attachment: fixed; }
   .footer__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px; }
-    .footer__grid li {
+    .lista {
       list-style-type: none;
-      margin: 5px 0; }
-
-h4 {
-  font-family: cursive;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 10px;
-  align-items: center; }
-
-.list {
-  font-family: 'Times New Roman', Times, serif;
-  color: darkmagenta;
-  margin-top: 30px;
-  transition: color 0,3; }
-  .list-a {
-    list-style-type: none;
-    text-decoration: none; }
-    .list-a:hover {
+      text-decoration: none;
+      margin: 5px 0;
+      color: black;
+      align-items: center; }
+    .lista:hover{
       color: crimson; }
 
-.foot__iconos {
-  margin-top: 25px;
-  margin-right: 15px;
-  display: flex;
-  justify-content: space-evenly;
-  color: darkmagenta;
-  transition: color 0.3;
-  align-items: center; }
-  .foot__iconos:hover {
-    color: crimson; }
+    .footer__iconos{
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 20px;
+      color:black;}
+    .footer__iconos:hover{
+      color: crimson; }
+    
+    .footer__iconos a{ 
+      font-size: 20px;
+      color:black; }
+    .footer__iconos a:hover{
+      color: crimson; }
 
-    /*hover*/
-    .hero{
-      background-color:lightpink;
-      padding: 40px 20px;
-      margin-top: 10px;
-      
-      color: black;
-    }
-  
-    .hero__grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 40px; 
-      align-items: center;
-   }
-   
-    .hero__grid--content h1{
-      color: white;
-      font-size:40px ;
-      margin-bottom: 30px;
-      font-style: italic;
-   }
   
 
-   .hero__grid--content p{
-      margin-bottom: 20px;
-   }
-  
-  
-  .hero__grid--content a{
-      background-color:$lila;
-      color:rgb(218, 73, 97);
-      padding: 15px;
-      border-radius: 10px;
-  }
-  
-  .hero__grid--img{
-      border-radius: 10px;
-      transition: transform: 0.3s;
-  }
-  
-  .hero__grid--img:hover{
-          transform: rotate(10deg);
-      }
-  
-  
+    
 
-
-    /*extend*/
     .btn-base{
       text-decoration: none;
       color: black;
       font-size: 16px;
+      margin-top: 0px;
       padding: 10px 10px;
       border-radius: 10px;
-      border: black;
       transition: all 0.3;
-  
-  
-      &:hover{
-          opacity: 0.8;
-      }
+      text-align: center;
   
   }
   
-  
-  
   .btn-dulce{
       @extend .btn-base;
-      background-color:coral;
-      
+      background-color: #edacb8;
    }
-  
-   .btn-salado{
-    @extend .btn-base;
-    background-color:blueviolet;
-  
-   }
-  
-   .btn-otro{
-    @extend .btn-base;
-    background-color:aqua;
-   }
+ 
 
-
-   /*tarjetas*/
-  
    .card{
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 40px;
     align-items: center;
     width: 300px;
-    border-color: black;
-    border-radius: 10px;
-   
-    gap: 5px;
+    border:none;
+    gap: 5px; }
+    .card__description{
+    text-align: center;
+    margin-top: 10px;}
+    .card__header--strong{
+      background-color:rgb(255, 255, 255,0.5);
+      color: black;
+      padding: 8px;
+      position: absolute;
+  border-bottom-right-radius: 10px;}
+
+  .transform:hover{
+    transform: translateX(10px);
+    background-color: #edcfd4;
+    color: #e773be;
+  }
+  
+  .transformproduct:hover{
+    background-color: #edcfd4;
+    color: #e773be;}
+
+  .movimiento:hover{
+    transform:translateY(5px) ;}
     
- }
- 
- .card__header{
-    position: relative;
- 
- }
- 
- .card__header img{
-    width: 80%;
-    border-radius: 10px;
-    margin-bottom: 20px;
- }
- 
+  .movimientos:hover{
+    transform: scale(1.1);}
  
 
  .productos{
-    font-family: cursive;
     text-align: center;
-    margin-top: 20px;
- }
+    margin-top: 20px;}
+    .productos__grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);}
+
+ .textproductos{
+  text-align: center;
+}
+
+.hero{
+  display: grid;}
+.hero__grid{
+  display: grid;
+  grid-template-columns: 1 fr;
+  align-items: center;
+  justify-items: center;  }
+
  
- .productos__grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
- }
+.imagen_inicio{
+  background-image: url(../imagen/90412.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative; 
+  opacity: 0.7;
+  width:100% ;
+  height: 20rem;
+  
+  padding: 2 rem;
+  background-attachment: fixed;}
+
+.imagen__productos{
+  background-image: url(../imagen/desayunno18.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative; 
+  opacity: 0.7;
+  width:100% ;
+  height: 20rem;
+  
+  padding: 2 rem;
+  margin-bottom: 30px;
+ 
+  background-attachment: fixed;}
 
 
- /*media querie*/
+.imagen__productos2{
+  background-image: url(../imagen/tortanumerorosa.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative; 
+  opacity: 0.7;
+  width:100% ;
+  height: 20rem;
+  
+  padding: 2 rem;
+  margin-bottom: 30px;
+  
+  background-attachment: fixed;
+}
+
+.imagen__productos3{
+  background-image: url(../imagen/frutilla.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative; 
+  opacity: 0.7;
+  width:100% ;
+  height: 20rem;
+  
+  padding: 2 rem;
+  margin-bottom: 30px;
+  
+  background-attachment: fixed;
+
+  
+}
 
 
-@media (max-width:425px){
+ @media (max-width:425px){
    
   .hero__grid{
       grid-template-columns: (1 fr);
@@ -289,8 +284,6 @@ h4 {
 }
 
 }
-
-
 
 
 
